@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Other page</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Other page</a>
-    </nav>
-    <main>
-      <h1>My other page</h1>
-    </main>
-  </body>
+<html lang="en-us">
+    <head>
+        <title>Lesson 2</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="Anna Davenport">
+        <meta name="description" content="Lesson 2, Semantic Tagging. Explains what semantic tags are and their purpose." />
+    </head>
+    <body>
+        <nav><a href="/"><strong>Home</strong></a>
+            <a href="page1.html">Previous Lesson</a>
+            <a href="page3.html">Next Lesson</a>
+            </nav>
+            <main><h1>Lesson 2- Semantic Tagging</h1></main>
+            <hr>
+            <p>Semantic tags in HTML are tags that show their purpose to someone reading the code. Without tags that explicitly state their function, code can quickly become messy and unreadable. An example of a non-semantic tag is <b>&lt;div&gt;</b>. This tag creates divisions in a page, similar to how the semantic tags &lt;main&gt;, &lt;header&gt;, and &lt;article&gt; do. However, as seen, semantic tags give more information about their content and make it easier to structure code that's readable. Semantic tags make up most code and tags commonly used, and are usually recognized by if their name is relevant and specific to its content.
+            </p>
+            <h3>Example</h3>
+            <pre>
+&lt;! DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;article&gt;
+            &lt;h2&gt;HTML&lt;/h2&gt;
+            &lt;p&gt;HTML is a coding language that uses tags to establish parts of a site.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            <p>Notice how the article tag is on its own and provides a specific topic- a crawler knows that it is going to be writing about a specific topic from the tag, not the content.</p>
+    </body>
 </html>
