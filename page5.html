@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Lesson 5</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="Anna Davenport">
+        <meta name="description" content="Lesson 5, Formatting Text. Explains how to format text with tables, lines, etc." />
+        <style>
+            table, th, td {
+              border:1px solid grey;
+            }
+            
+        table {
+          width:70%;
+          height:150px;
+        }
+        th,td {
+          width:215px;
+          height:20px;
+        }
+        td {
+          text-align: center;
+        }
+          </style>
+    </head>
+    <body>
+        <nav><a href="/"><b>Home</b>></a>
+            <a href="page4.html">Previous Lesson</a>
+            <a href="page6.html">Next Lesson</a>
+            </nav>
+            <main><h1>Lesson 5- Formatting Text</h1></main>
+            <hr>
+            <h3>Tables</h3>
+            <p>Tables are easy to make in HTML. They consist of 4 tags:</p>
+            <ol>
+                <li>table- Creates a table</li>
+                <li>tr- Creates a row</li>
+                <li>th- Creates a heading cell</li>
+                <li>td- Creates a data (column) cell</li>
+            </ol>
+            <p>The attributes colspan and rowspan are also used, as they merge cells vertically or horizontally.</p>
+            <br>
+            <p>Write the table declaration first, then start with a row and insert heading or column cells left to right. Here's an example table:</p>
+            <table>
+                <tr>
+                 <th>x</th>
+                 <th>y</th>
+                  <th colspan = "2">z</th>
+               </tr>
+               <tr>
+                 <td>1</td>
+                 <td>2</td>
+                 <td>6</td>
+                 <td>5</td>
+               </tr>
+               <tr>
+               <td rowspan="2">9</td>
+               <td>2</td>
+               <td>3</td>
+               <td>4</td>
+               <tr>
+                 <td>7</td>
+                 <td>8</td>
+                 <td>1</td>
+               </tr>
+             
+             </table>
+
+            <h3>Lists</h3>
+            <p>Lists are also very easy to create in HTML, and consist of three tags:</p>
+            <ol>
+                <li>ol- Creates an ordered list</li>
+                <li>ul- Creates an unordered list</li>
+                <li>li- Creates an item for the list</li>
+            </ol>
+            <p>Start with putting either an ol or ul tag, and then li for every list item. Here's two example lists:</p>
+            <ol>
+                <li>This</li>
+                <li>Is</li>
+                <li>A</li>
+                <li>Numbered</li>
+                <li>List</li>
+            </ol>
+            <ul>
+                <li>This</li>
+                <li>Is</li>
+                <li>An</li>
+                <li>Unnumbered</li>
+                <li>List</li>
+            </ul>
+            <h3>&lt;pre&gt; Tag</h3>
+            <p>HTML ignores any unnecessary spaces or line breaks in your paragraphs. This can be annoying when spaces and breaks are necessary. There are multiple ways to solve this issue. Firstly, we can use &lt;br&gt; or empty paragraph tags for spaces and lines. Or, we use the &lt;pre&gt; tag. This tag forces the page to display the text as it is written, with spaces and coding characters, removing the need to always use the first option for formatting. Here's an example:</p>
+            <pre>
+This    text
+is      very
+
+
+    Cool
+            </pre>
+            <p>All spaces and line breaks are preserved!</p>
+    </body>
+</html>

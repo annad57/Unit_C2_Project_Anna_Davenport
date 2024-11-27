@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Lesson 7</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="Anna Davenport">
+        <meta name="description" content="Lesson 7, File Paths. Explains the difference between relative and absolute file paths and how to use them." />
+    </head>
+    <body>
+        <nav><a href="/"><b>Home</b></a>
+            <a href="page6.html">Previous Lesson</a>
+            <a href="page8.html">Next Lesson</a>
+            </nav>
+            <main><h1>Lesson 7- File Paths</h1></main>
+            <hr>
+            <p>HTML code often contains files that are on the server. To refer to them, we use <strong>file paths</strong>. There are two kinds: Relative and absolute. Files are organized in a computer or server based on a hierarchy. One root file that expands into sub-files, which can have more and more files in them.</p>
+            <p>To find a file, you must direct up or down on the hierarchy and left or right to the specific file. In one group, you can refer to files just by their name. If it is in another group, you must specifcy to direct to that group, whether that mean moving to the last common shared group and back down, and then the file inside it.</p>
+            <p>To move up a level (closer to root), you use "../". To move down a level, use "/". To move across a level, also use "/", or just put its name.</p>
+            <img src="Photos/directory.png" alt = "Example of file directory">
+            <ins>(Relative file paths used)</ins>
+            <ul>
+                <li>To go from F7 to F9, write "F9".</li>
+                <li>To go from F8 to F5, write "../../D13/F5".</li>
+                <li>To go from D1 to F2, write "/D11/F2".</li>
+            </ul>
+            <h3>Relative file paths</h3>
+            <p>Relative file paths are used to navigate a location in the current directory, and are easy to read long as the directory itself is easy to read. Most HTML code use relative file paths, so it is good to practice.</p>
+            <h3>Absolute file paths</h3>
+            <p>Absolute file paths are directions to a file from the root directory. In other words, their file path writes the location of the file from the start of the directory. It is best to use them when referring to files that exist outside of your current computer or server.</p>
+    </body>
+</html>
